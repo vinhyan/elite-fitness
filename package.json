@@ -1,0 +1,23 @@
+{
+  "name": "gymvinh",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.0.4",
+    "express-session": "^1.17.3",
+    "install": "^0.13.0",
+    "mongoose": "^7.0.3",
+    "npm": "^9.6.3"
+  }
+}

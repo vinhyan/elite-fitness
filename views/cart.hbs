@@ -1,0 +1,41 @@
+<main>
+    <div class="cart-page-container">
+        <h2>My Cart</h2>
+        {{#if err}}
+            {{>error}}
+        {{else}}
+            {{#if isLoggedIn}}
+                <p class="membership-plan">Your membership plan: 
+                    {{#if isMonthlyPlan}}
+                        Monthly Plan
+                    {{else}}
+                        Regular Plan
+                    {{/if}}
+                </p>
+                <ol class="all-items-container">
+                    {{#each items}}
+                        <li>{{>cartItem}}</li>
+                    {{/each}}
+                </ol>
+                <div class="total-container">
+                    <div class="amount-container">
+                        <p>Subtotal: </p><span>${{subtotal}}</span>
+                    </div>
+                    <div class="amount-container">
+                        <p>Tax: </p><span>${{taxAmt}}</span>
+                    </div>
+                    <div class="amount-container">
+                        <p>Total: </p><span>${{total}}</span>
+                    </div>
+                    <form action="/pay/{{username}}/{{total}}" method="post">
+                            <button class="checkout-btn" type="submit">CHECK OUT</button>
+                    </form>
+                    {{!-- {{#unless isMonthlyPlan}}
+                        
+                    {{/unless}} --}}
+                </div>
+
+            {{/if}}       
+        {{/if}}
+    </div>
+</main>

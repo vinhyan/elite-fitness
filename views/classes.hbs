@@ -1,0 +1,14 @@
+<main>
+  <div class="class-page">
+    <div class="class-page-info">
+      <h2>Our Classes</h2>
+      <p class="desc">Offered by our world-renowned instructors</p>
+      {{>error}}
+    </div>
+    <div class="all-classes-container">
+      {{#each classes}}
+        {{>class}}
+      {{/each}}
+    </div>
+  </div>
+</main>

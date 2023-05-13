@@ -1,0 +1,52 @@
+<main>
+  <div class="login-page-container">
+    <img class="welcome-pic" src="/images/welcome-pic.jpeg" alt="bg">
+    <div class="login-section" >
+        <h2>Welcome To <span class="logo">Elite Fitness</span></h2>
+        <form method='post'>
+            {{#if isLoggedIn}}
+                <div class="login-page-loggedin">
+                    <p>Hello {{username}}!</p>
+                    <button class="log-link" type="submit" formaction="/logout">Log out</button>
+                </div>
+            {{else}}
+                {{#if accountCreated}}
+                    <div class="signup-container">
+                        <p>Would you like to join our monthly plan? Only $75 a month!</p>
+                        <div class="signup-options">
+                            <label for="monthlyPlan">
+                                <input type="radio" name="subscription" id="monthlyPlan" value="monthly">
+                                <span>Yes, I'd like to join!</span>
+                            </label>
+                            <label for="regularPlan">
+                                <input type="radio" name="subscription" id="regularPlan" value="regular">
+                                <span>I'll pass thank you!</span>
+                            </label>
+                        </div>
+                        {{>error}}
+                        <button type='submit' formaction='/signup/{{username}}'>Sign Up!</button>
+                    </div>
+                {{else}}
+                    <div class="loginout">
+                        <p>Log In or Sign Up For A New Account</p>
+                        <label for='username'>
+                            {{!-- <span>Username: </span> --}}
+                        <input class="credentials" type='text' name='username' id='username' placeholder="Username"/>
+                        </label>
+                        <label for='password'>
+                            {{!-- <span>Password: </span> --}}
+                        <input class="credentials" type='password' name='password' id='password' placeholder="Password"/>
+                        </label>
+                        {{>error}}
+                        <div class="log-btn-container">
+                            <button class="login-btn" type='submit' formaction='/login'>Login</button>
+                            <button class="signup-btn" type='submit' formaction='/create-account'>Create An Account</button>
+                        </div>
+                    </div>
+                {{/if}}
+            {{/if}}
+        </form>
+    </div>
+  </div>
+  
+</main>

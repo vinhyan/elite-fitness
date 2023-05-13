@@ -1,0 +1,319 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2rem;
+  background-color: #c8b49f;
+  color: #f8f9fa;
+  letter-spacing: 1px;
+  position: relative;
+}
+button {
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #f8f9fa;
+}
+
+nav li {
+  list-style: none;
+}
+
+header {
+  display: flex;
+  padding: 2.5rem;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+footer {
+  text-align: center;
+  padding-bottom: 1rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* height: 2.5rem;   */
+}
+
+.logo {
+  color: #7f5539;
+  white-space: nowrap;
+}
+
+nav ul {
+  display: flex;
+  justify-content: end;
+  gap: 1.7rem;
+}
+
+.log-link {
+  border: none;
+  background: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #7f5539;
+}
+
+.login-page-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 5rem 2rem 8.5rem 2rem;
+  gap: 5rem;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+
+.welcome-pic {
+  /* width: 100%; */
+  max-width: 640px;
+  width: 100%;
+}
+
+.login-section {
+  /* max-width: 640px;
+  width: 100%; */
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+
+.login-section h2 {
+  font-size: 3rem;
+}
+
+.login-page-container form {
+  width: 640px;
+  width: 100%;
+}
+
+.loginout {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+  /* width: 100%; */
+}
+
+.credentials {
+  height: 3.5rem;
+  padding: 1rem;
+  font-size: 1.1rem;
+  width: 100%;
+  border: none;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+}
+
+::placeholder {
+  font-family: 'Raleway', sans-serif;
+}
+
+.log-btn-container {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.log-btn-container button {
+  height: 3.5rem;
+  padding: 1rem;
+  font-size: 1.1rem;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+}
+
+.login-btn {
+  background-color: #7f5539;
+  color: #f8f9fa;
+}
+
+.signup-btn {
+  background-color: #f8f9fa;
+}
+
+.err {
+  color: #c1121f;
+}
+
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.signup-options {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.signup-options input {
+  width: 1rem;
+  height: 1rem;
+  color: #7f5539;
+}
+
+.signup-container button {
+  margin-top: 1rem;
+  padding: 1rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+  width: 50%;
+  background-color: #b08968;
+}
+
+.login-page-loggedin {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: left;
+}
+
+.login-page-loggedin button {
+  display: contents;
+}
+.class-page {
+  padding: 5rem 2rem 7.5rem 2rem;
+}
+.class-page-info {
+  text-align: center;
+}
+
+.class-page h2 {
+  padding-bottom: 1.5rem;
+}
+
+.class-page .desc {
+  padding-bottom: 1.5rem;
+}
+
+.class-container {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  padding: 3rem 1rem;
+  flex-wrap: wrap;
+}
+
+.class-container:nth-child(even) {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.class-container img {
+  max-width: 560px;
+  width: 100%;
+}
+
+.class-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.class-info-container h3 {
+  color: #7f5539;
+  font-size: 1.7rem;
+}
+
+.class-info-container button {
+  padding: 1rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+  width: 170px;
+  background-color: #1a1423;
+  color: #f8f9fa;
+}
+
+.cart-page-container {
+  max-width: 55rem;
+  width: 100%;
+  padding: 5rem 2rem 7.5rem 2rem;
+  margin: 0 auto;
+  color: #7f5539;
+}
+
+.cart-page-container h2 {
+  padding-bottom: 2rem;
+  color: #f8f9fa;
+}
+
+.cart-page-container .membership-plan {
+  color: #f8f9fa;
+}
+
+.all-items-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 3rem 1.5rem;
+}
+
+.item-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.item-container button {
+  border: none;
+  background: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: #7f5539;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.total-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: end;
+  padding: 0 1.5rem 3rem 1.5rem;
+  font-weight: 700;
+}
+
+.amount-container {
+  display: flex;
+  justify-content: end;
+  gap: 1.5rem;
+}
+
+.total-container form {
+  text-align: right;
+}
+
+.checkout-btn {
+  margin-top: 3rem;
+  padding: 1rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+  width: 170px;
+  background-color: #1a1423;
+  color: #f8f9fa;
+}
